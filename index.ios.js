@@ -1,11 +1,14 @@
 import React from 'react';
 import { Text, View, AppRegistry } from 'react-native';
+import Header from './src/components/Header';
+import Albums from './src/components/Albums';
 
 const App = () => {
   const { textStyle, container } = styles;
   return (
-    <View style={container}>
-      <Text style={textStyle}>Hi Hello!</Text>
+    <View style={{ flex:1 }}>
+      <Header headerName="Albums"/>
+      <Albums />
     </View>
   );
 }
@@ -17,7 +20,7 @@ const styles = {
     alignItems: 'center'
   },
   textStyle: {
-    fontSize: 30
+    fontSize: 15
   }
 }
 
